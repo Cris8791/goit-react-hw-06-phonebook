@@ -55,7 +55,8 @@ class ContactForm extends Component {
             name="number"
             value={number}
             onChange={this.handleChange}
-            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            pattern="\d*"
+            title="Phone number must be digits"
             required
           />
         </label>
